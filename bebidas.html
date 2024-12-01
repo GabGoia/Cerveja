@@ -1,0 +1,376 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Beer & Store</title>
+    <link rel="stylesheet" href="beer.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 0;
+            background-image: url('fundo madeira.jpg');
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 40px 20px;
+        }
+
+        .image-container {
+            flex: 1;
+            text-align: center;
+        }
+
+        .image-container img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+        }
+
+        .description-container {
+            flex: 1;
+            padding-left: 30px;
+        }
+
+        .description-container h1 {
+            font-size: 36px;
+            color: #ffd700;
+        }
+
+        .description-container p {
+            font-size: 18px;
+            color: #ffffff;
+            line-height: 1.6;
+        }
+
+        .description-container .characteristics {
+            margin-top: 20px;
+        }
+
+        .description-container .characteristics h2 {
+            font-size: 24px;
+            color: #ffd700;
+            margin-bottom: 10px;
+        }
+
+        .description-container .characteristics ul {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        .description-container .characteristics ul li {
+            font-size: 18px;
+            color: #ffffff;
+            margin-bottom: 8px;
+        }
+
+        .description-container .button-container {
+            margin-top: 30px;
+        }
+
+        .button-container a {
+            display: inline-block;
+            padding: 10px 20px;
+            background-color: #e31837;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+            transition: background-color 0.3s ease;
+        }
+
+        .button-container a:hover {
+            background-color: #c11631;
+        }
+
+        .logo img {
+            width: 80px;
+            height: 80px;
+            border-radius: 50%;
+            object-fit: cover;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="nav-bar">
+                <div class="logo">
+                    <img src="logo.jpg" alt="Logo da Beer & Store">
+                </div>
+                
+
+                <div class="nav-list">
+                    <ul>
+                        <li class="nav-item"><a href="index.html" class="nav-link">Início</a></li>
+                        <li class="nav-item"><a href="cardápio.html" class="nav-link" target="_blank">Cardápio</a></li>
+                        <li class="nav-item"><a href="sobre.html" class="nav-link" target="_blank">Horários e Shows</a></li>
+                    </ul>
+                </div>
+
+                <div class="login-button">
+                    <button><a href="formulário.html" target="_blank">Entrar</a></button>
+                </div>
+
+                <div class="mobile-menu-icon">
+                    <button onclick="menuShow()"><img class="icon" src="menu-button.svg"></button>
+                </div>
+            </div>    
+        </nav>
+
+        <div class="mobile-menu">
+            <ul>
+                <li class="nav-item"><a href="#" class="nav-link">Início</a></li>
+                <li class="nav-item"><a href="#" class="nav-link">Projetos</a></li>
+                <li class="nav-item"><a href="#" class="nav-link">Sobre</a></li>
+            </ul>
+
+            <div class="login-button">
+                <button><a href="#">Entrar</a></button>
+            </div>
+        </div>
+    </header>
+
+    <div class="container">
+        <div class="image-container">
+            <img src="Bebidas/Pilsen.webp" alt="Cerveja Exemplo">
+        </div>
+
+        <div class="description-container">
+            <h1>Chopp Pilsen</h1>
+            <p>Germânia Pilsen-O chopp para todas as ocasiões. O estilo Pilsen é altamente refrescante, de coloração amarelo claro e com baixo amargor e de fácil degustação. 
+                A boa formação de espuma conversa a qualidade do malte e lúpulo.</p>
+
+            <div class="characteristics">
+                <h2>Características</h2>
+                <ul>
+                    <li><strong>Teor Alcoólico:</strong> 4.5%</li>
+                    <li><strong>Barril de CHOPP:</strong> 10L, 15L, 20L, 30L, 50L</li>
+                    <li><strong>Volume Garrafa:</strong> 355ml, 500ml</li>
+                    <li><strong>Growler:</strong> 1 Litro</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="image-container">
+            <img src="Bebidas/Vinho.webp" alt="Cerveja Exemplo">
+        </div>
+
+        <div class="description-container">
+            <h1>Chopp de Vinho</h1>
+            <p>Germânia Vinhedo-Atende aos paladares exigentes de consumidores de chopp e amantes do vinho. Único produto com essa composição, é uma combinação exclusiva que une o sabor e o requinte do vinho, 
+                com a leveza e refrescância da cerveja, resultando em uma experiência harmoniosa e equilibrada ao paladar. Um blend perfeito.</p>
+
+            <div class="characteristics">
+                <h2>Características</h2>
+                <ul>
+                    <li><strong>Teor Alcoólico:</strong> 6.8%</li>
+                    <li><strong>Barril de CHOPP:</strong> 10L, 15L, 20L, 30L, 50L</li>
+                    <li><strong>Volume Garrafa:</strong> 355ml,500ml</li>
+                    <li><strong>Growler:</strong> 1 Litro</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="image-container">
+            <img src="Bebidas/Escura.webp" alt="Cerveja Exemplo">
+        </div>
+
+        <div class="description-container">
+            <h1>Chopp Escuro</h1>
+            <p>Germânia Escura-Sua coloração escura, espuma cremosa e baixo amargor satisfaz a todos os apaixonados por cerveja escura. Apresenta coloração escura, 
+                proveniente dos maltes levemente caramelizados, apresenta dulçor marcante e baixo amargor, a boa formação espuma deixa a experiência ainda mais incrível, 
+                realçando a qualidade do malte e elegância da bebida no copo.
+            </p>
+
+            <div class="characteristics">
+                <h2>Características</h2>
+                <ul>
+                    <li><strong>Teor Alcoólico:</strong> 4%</li>
+                    <li><strong>Barril de CHOPP:</strong> 10L, 15L, 20L, 30L, 50L</li>
+                    <li><strong>Volume Garrafa:</strong> 355ml, 500ml</li>
+                    <li><strong>Growler:</strong> 1 Litro</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="image-container">
+            <img src="Bebidas/german black.webp" alt="Cerveja Exemplo">
+        </div>
+
+        <div class="description-container">
+            <h1>Chopp Black</h1>
+            <p>Germânia Black-Apresenta coloração escura, proveniente da tosta do malte, apresenta leve dulçor e amargor perceptível, boa formação e permanência de espuma.
+                 Premiada em 2018 no Beer Challenger em Londres. Medalha de Prata.</p>
+
+            <div class="characteristics">
+                <h2>Características</h2>
+                <ul>
+                    <li><strong>Teor Alcoólico:</strong> 4%</li>
+                    <li><strong>Barril de CHOPP:</strong> 10L, 15L, 20L, 30L</li>
+                    <li><strong>Volume Garrafa:</strong>500ml</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="image-container">
+            <img src="Bebidas/ipa.webp" alt="Cerveja Exemplo">
+        </div>
+
+        <div class="description-container">
+            <h1>Chopp IPA</h1>
+            <p>Germânia IPA-Uma Cerveja de corpo médio. sabor de malte e lúpulo, com amargor acentuado, espuma cremosa e persistente, seu aroma é cítrico proveniente dos lúpulos americanos.</p>
+
+            <div class="characteristics">
+                <h2>Características</h2>
+                <ul>
+                    <li><strong>Teor Alcoólico:</strong> 7%</li>
+                    <li><strong>Barril de CHOPP:</strong> 10L, 15L, 30L</li>
+                    <li><strong>Volume Garrafa:</strong>500ml</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="image-container">
+            <img src="Bebidas/lager.webp" alt="Cerveja Exemplo">
+        </div>
+
+        <div class="description-container">
+            <h1>Amber Lager</h1>
+            <p>Germânia Amber Lager-Uma bem atenuada e maltada lager âmbar, com uma interessante qualidade de caramelo ou tostado com amargor retraído. Normalmente muito atenuada, muitas vezes com emprego de adjuntos. Suave, com a característica lager de alta drinkability. Com aroma baixo a moderado aroma de malte pode remeter a grãos, com muito baixo a moderado dulçor de malte caramelo ou malte tostado. 
+                O aroma de lúpulo pode variar de baixo a nenhum, com um leve caráter floral ou picante.</p>
+
+            <div class="characteristics">
+                <h2>Características</h2>
+                <ul>
+                    <li><strong>Teor Alcoólico:</strong> 4.8%</li>
+                    <li><strong>Barril de CHOPP:</strong> 10L, 15L, 20L, 30L, 50L</li>
+                    <li><strong>Volume Garrafa:</strong>500ml</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="image-container">
+            <img src="Bebidas/Puro Malte.webp" alt="Cerveja Exemplo">
+        </div>
+
+        <div class="description-container">
+            <h1>Puro Malte</h1>
+            <p>Germânia Puro MalteReceita com blend de maltes especiais e ingredientes rigorosamente selecionados, preservando a tradição da pureza alemã: água, lúpulo, malte e levedura.
+                 Coloração ouro e amargor médio baixo.</p>
+
+            <div class="characteristics">
+                <h2>Características</h2>
+                <ul>
+                    <li><strong>Teor Alcoólico:</strong> 4.5%</li>
+                    <li><strong>Barril de CHOPP:</strong> 10L, 15L, 20L, 30L, 50L</li>
+                    <li><strong>Volume Garrafa:</strong> 500ml</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="image-container">
+            <img src="Bebidas/weissbier.webp" alt="Cerveja Exemplo">
+        </div>
+
+        <div class="description-container">
+            <h1>Weissbier</h1>
+            <p>Germânia Weissbier-Coloração amarelo/palha, no aroma e sabor notas de banana e especiarias como cravo ou noz moscada são perceptíveis, amargor baixo, ao final dulçor médio e refrescância. A formação da espuma é aceitável para conservar sabor e aroma do estilo. Autêntica representante da cerveja de trigo alemã. com matérias primas importadas, não passa pelo processo de filtração. 
+                Possuí aroma frutado, espuma densa e persistente, sabor do malte e trigo que remete à pão, leve picância e notas de cravo.</p>
+
+            <div class="characteristics">
+                <h2>Características</h2>
+                <ul>
+                    <li><strong>Teor Alcoólico:</strong> 5%</li>
+                    <li><strong>Barril de CHOPP:</strong> 10L, 15L, 30L</li>
+                    <li><strong>Volume Garrafa:</strong> 500ml</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <div id="footer_content">
+            <div id="footer_contacts">
+                <div class="logo">
+                    <img src="logo.jpg" alt="Logo da Beer & Store">
+                </div>
+
+                <div id="footer_social_media">
+                    <a href="https://www.instagram.com/accounts/login/?next=https%3A%2F%2Fwww.instagram.com%2Fstories%2Fvagasempiracicaba%2F3463430887317050786%2F%3Futm_source%3Dig_story_item_share%26igsh%3DcHprdWl0bnh5c3g1&is_from_rle" class="footer-link" target="_blank" id="Instagram">
+                        <i class="fa-brands fa-instagram"></i>
+                    </a>
+
+                    <a href="#" class="footer-link" id="Facebook">
+                        <i class="fa-brands fa-facebook"></i>
+                    </a>
+
+                    <a href="#" class="footer-link" id="Whatsapp">
+                        <i class="fa-brands fa-whatsapp"></i>
+                    </a>
+                </div>
+            </div>
+
+            <ul class="footer-list">
+                <li>
+                    <h3>Endereço:</h3>
+                </li>
+                <li>
+                    <p>Avenida Manoel Conceição, 810, Vila Rezende, Piracicaba, Brazil 13405230</p>
+            </ul>
+
+            <ul class="footer-list">
+                <li>
+                    <h3>Info</h3>
+                </li>
+                <li>
+                    <p>Svazate Bar e Chopperia</p>
+                    <p>Svazate Store & Beer</p>
+                    <p>🤪Promoções Diárias</p>
+                    <p>Melhor ambiente</p>
+                    <p>Shows ao vivo</p>
+                    <p>Futebol ao vivo</p>
+                </li>
+            </ul>
+
+            <div id="footer_subscribe">
+                <h3>Fique por dentro da programação dos shows:</h3>
+
+                <p>
+                    Coloque seu email e receba a programação para o final de semana!
+                    Basta clicar no botão ENTRAR
+                </p>
+            </div>
+        </div>
+        <div id="footer_copyright">
+            &#169
+            2024 all rights reserved
+        </div>
+    </footer>
+
+</body>
+</html>

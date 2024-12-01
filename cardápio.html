@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cartões Flutuantes</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: Arial, sans-serif;
+      background: url('barril.webp') no-repeat center center fixed; /* Adiciona a imagem de fundo */
+      background-size: cover; /* Garante que a imagem cubra toda a tela */
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
+      margin: 0;
+    }
+
+    .container {
+      display: flex;
+      gap: 20px;
+      background-color: rgba(255, 255, 255, 0.1); /* Transparência no fundo da área dos cartões */
+      border-radius: 15px;
+      padding: 20px;
+      box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+    }
+
+    .card {
+      background-color: #fff;
+      border-radius: 10px;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+      overflow: hidden;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+      width: 300px;
+      text-align: center;
+    }
+
+    .card img {
+      width: 100%;
+      height: 200px;
+      object-fit: cover;
+    }
+
+    .card h3 {
+      margin: 15px 0 10px;
+      color: #333;
+    }
+
+    .card p {
+      color: #666;
+      margin-bottom: 20px;
+      padding: 0 15px;
+    }
+
+    .card:hover {
+      transform: translateY(-10px);
+      box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="card">
+    <a href="bebidas.html" target="_blank">    
+      <img src="Bebidas/bebida flutuante.jpg" alt="Imagem do Card 1">
+    </a>  
+      <h3>Bebidas</h3>
+      <p>Alcoólicas</p>
+    </div>
+    <div class="card">
+    <a href="comidas.html" target="_blank">    
+      <img src="Comidas/comida flutuante.jpg" alt="Imagem do Card 2">
+    </a>  
+      <h3>Comidas</h3>
+      <p>Porções e Lanches</p>
+    </div>
+  </div>
+</body>
+</html>

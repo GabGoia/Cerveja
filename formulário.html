@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fique por dentro da programação</title>
+
+    <link rel="stylesheet" href="beer.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 0;
+            background-image: url('imagem formulario.jpg');
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+
+        .form-container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 40px 20px;
+            background-color: white;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        h1 {
+            font-size: 32px;
+            color: #e31837;
+            text-align: center;
+        }
+
+        p {
+            font-size: 18px;
+            text-align: center;
+            color: #333;
+            margin-bottom: 30px;
+        }
+
+        #input_group {
+            display: flex;
+            justify-content: center;
+            gap: 10px;
+            margin-bottom: 20px;
+        }
+
+        #input_group input {
+            padding: 10px;
+            font-size: 16px;
+            border-radius: 5px;
+            border: 1px solid #ccc;
+            width: 70%;
+        }
+
+        #input_group button {
+            padding: 10px 15px;
+            font-size: 16px;
+            background-color: #e31837;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        #input_group button:hover {
+            background-color: #c11631;
+        }
+
+        .footer-link {
+            text-decoration: none;
+            color: #e31837;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="form-container">
+        <h1>Fique por dentro da programação dos shows!</h1>
+        <p>Coloque seu email abaixo e receba a programação para o final de semana diretamente no seu e-mail!</p>
+
+        <form action="https://formsubmit.co/YOUR_EMAIL" method="POST" id="subscribeForm">
+            <div id="input_group">
+                <!-- Campo de e-mail -->
+                <input type="email" name="email" id="email" placeholder="Seu email" required>
+                
+                <!-- Botão de envio -->
+                <button type="submit">
+                    <i class="fa-regular fa-envelope"></i> Enviar
+                </button>
+            </div>
+        </form>
+    </div>
+
+</body>
+</html>
